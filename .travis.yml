@@ -1,4 +1,12 @@
 language: node_js
 node_js: node
 services:
-- mongodb 
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: JhqPD1BliB/XFBrKCBQEVydU+fdAsDsXZVKzYfCDZflxBRxKTrAPFjnK4lH4w8YOdxnTPb7ZMO7kc+8g/p0CyLizabpx0z0Jz+nX21XOVArpOvaDINSilS/2T9JWfd+R3AFLoN4v6szhtaBMSKsKWOq4K8le2Kp7RhfbTLctmKLxTmprsuNpoOEYRMFpx1mvhWUShZiHgxcIdKSgDoPRCkUcx52EajBgZ8EBkygNcKJEXd/PA/IIhsDrGSbxYhvUF2Z3VDCvfD75sUW6/rPE/66X8Gd+pKxzY172PSB1r16br5e38/YJsVcAT4QaWjqcCeYpSlsNyy4+uL4An0Pxp2HkliiHw/Ml3g1I3rx2xZ1iNGrFheQ24oZGBdo1fdMW8hDU8oVqtwZEXsD7zLm2xizXK5Dl8PIDNn2AnURwH1P4xo37uupfnlWk71hXwRAoimA6K/hXutLCg8snh84HRdM4JT/HNz/ZxiMiPSf+/fdrkofeQOD44yFV+k7IeyDkcfX38WAKFU8VpzZrO4v7luS4epmOwNOGEYrSGqfr2wBDjkLYsjAHiPIFQ8M+Vabgvs2fo6XgjxtDPFhPf5wAWlXqksKrJ50FnE+XURVdLvkI9mAGEPYTtA8TnTKR0L+6+ZtuFHdf8YQl70oU8LwkpYv8zUigoPddbPY/4cE6SD8=
+  app: guarded-ocean-29084
+  on:
+    repo: afterburnerDS/blog-app-mongoose-tests-travis-heroku
+    branch: feature/tests
